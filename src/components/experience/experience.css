@@ -1,18 +1,41 @@
-.experience__frontend {
+.experience__container {
   margin-top: 3.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+.skills {
+  background: var(--color-bg-variant);
+  border: 1px solid transparent;
+  border-radius: 1.7rem;
+  text-align: center;
+  padding: 2rem;
+  transition: var(--transition);
+  width: 48%;
+  margin: 1rem 0;
+}
+.skills:hover {
+  background: transparent;
+  border-color: var(--color-primary-variant);
+  cursor: default;
 }
 .skills-rates {
+  margin-top: 3rem;
   display: flex;
   align-items: center;
   flex-direction: column;
+  min-height: calc(100% - 4rem);
+  justify-content: space-evenly;
 }
 .skills-rates .progress {
   width: 95%;
   background-color: #eeeeee;
-  height: 1.8rem;
+  height: 1.5rem;
   margin: 2rem 0;
   position: relative;
   border-radius: 1rem;
+  transform-style: preserve-3d;
+  perspective-origin: 5000px;
 }
 .skills-rates .progress span:first-of-type {
   position: absolute;
@@ -20,7 +43,11 @@
   border-radius: 1rem;
   bottom: 0;
   height: 100%;
-  background-color: var(--color-primary-variant);
+  background: linear-gradient(
+    to right,
+    var(--color-primary-variant) 0%,
+    var(--color-bg-variant) 100%
+  );
   transition: 1s;
   -webkit-transition: 1s;
   -moz-transition: 1s;
@@ -36,15 +63,24 @@
 }
 .progress__icon {
   position: absolute;
-  left: 50%;
+  left: 44%;
   top: -3.5rem;
   font-size: 3rem;
   transform: translateX(-50%);
+  animation: rotateAnimation 2s linear infinite;
+}
+.progress__icon-react {
+  position: absolute;
+  left: 44%;
+  top: -3.5rem;
+  font-size: 3rem;
+  transform: translateX(-50%);
+  animation: spin2d 5000ms infinite linear;
 }
 
 .skills-rates .progress .counter {
   position: absolute;
-  width: 5%;
+  width: fit-content;
   font-size: 0.8rem;
   top: -150%;
   right: 0;
@@ -53,12 +89,32 @@
   padding: 0.1rem;
   color: var(--color-white);
 }
+.spin2d {
+  animation: spin2d 5000ms infinite linear;
+}
 /*========= MEDIA QUERIES (MEDIUM) =========*/
 @media screen and (max-width: 1024px) {
-  .skills-rates .progress {
-    height: 1.2rem;
+  .skills {
+    width: 100%;
   }
 }
 /*========= MEDIA QUERIES (SMALL) =========*/
 @media screen and (max-width: 600px) {
+}
+/*========= Key frame =========*/
+@keyframes spin2d {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateAnimation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }

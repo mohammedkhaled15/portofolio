@@ -24,11 +24,11 @@ const About = () => {
                             <h5>Experience </h5>
                             <small>2+ Years</small>
                         </div>
-                        <div className="about__card">
+                        {/* <div className="about__card">
                             <FiUsers className='about__icon' />
                             <h5>Clients </h5>
                             <small>2+ Years</small>
-                        </div>
+                        </div> */}
                         <div className="about__card">
                             <VscFolderActive className='about__icon' />
                             <h5>Projects</h5>
@@ -36,7 +36,9 @@ const About = () => {
                         </div>
                     </div>
                     <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas vel in, totam autem sint voluptate odio repellendus minima maxime possimus quas quae obcaecati! Dolores dolorum saepe consequatur corrupti ipsam totam.
+                        I'm very pleased to introduce my CV hoping to be one of your team.
+                        I'm a Front-end web developer with 2 years of experience developing modern, responsive, and cross-browser-compatible websites using HTML, CSS, JavaScript, React-js and more different libraries.
+                        I'm Seeking a challenging career in your company as Front-End Developer where my abilities and skills can be developed, and my knowledge can be applied.
                     </p>
                     <a href="#contact" className='btn btn-primary'>Let's Talk</a>
                 </div>
