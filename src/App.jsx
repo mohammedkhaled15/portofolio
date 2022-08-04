@@ -6,15 +6,17 @@ import Nav from "./components/nav/Nav"
 import Footer from "./components/footer/Footer"
 import Experience from "./components/experience/Experience"
 import Testemonials from "./components/testemonials/Testemonials"
+import Services from './components/services/Services'
 
 const App = () => {
     return (
         <>
             <Header />
-            <About />
             <Nav />
+            <About />
             <Experience />
             <Testemonials />
+            <Services />
             <Contact />
             <Footer />
         </>

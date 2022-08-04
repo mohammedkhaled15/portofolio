@@ -7,7 +7,7 @@ import HeroImg from "./../../assets/me.png"
 
 const Header = () => {
     return (
-        <header>
+        <header id='home'>
             <div className="container header__container">
                 <h5> Hello I'm</h5>
                 <h1>Mohammed Khaled</h1>
@@ -16,6 +16,8 @@ const Header = () => {
                 <CvBtns />
 
                 <HeaderSocials />
+
+                <a href="#contact" className='scroll__down'>Scroll Down</a>
 
                 <div className="hero-img">
                     <img src={HeroImg} alt="me" />
