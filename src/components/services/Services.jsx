@@ -1,6 +1,6 @@
 import React from 'react'
 import "./services.css"
-import { BsCheckLg } from "react-icons/bs"
+import { BiCheck } from "react-icons/bi"
 
 const Services = () => {
     return (
@@ -13,41 +13,19 @@ const Services = () => {
                         <h3>UI/UX</h3>
                     </div>
                     <ul className='service__list'>
-                        <li><BsCheckLg className='service__list-icon' />
+                        <li><BiCheck className='service__list-icon' />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum labore enim nobis necessitatibus</p>
                         </li>
-                        <li><BsCheckLg className='service__list-icon' />
+                        <li><BiCheck className='service__list-icon' />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum labore enim nobis necessitatibus</p>
                         </li>
-                        <li><BsCheckLg className='service__list-icon' />
+                        <li><BiCheck className='service__list-icon' />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum labore enim nobis necessitatibus</p>
                         </li>
-                        <li><BsCheckLg className='service__list-icon' />
+                        <li><BiCheck className='service__list-icon' />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum labore enim nobis necessitatibus</p>
                         </li>
-                        <li><BsCheckLg className='service__list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum labore enim nobis necessitatibus</p>
-                        </li>
-                    </ul>
-                </div>
-                <div className="service">
-                    <div className="service__head">
-                        <h3>UI/UX</h3>
-                    </div>
-                    <ul className='service__list'>
-                        <li><BsCheckLg className='service__list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum labore enim nobis necessitatibus</p>
-                        </li>
-                        <li><BsCheckLg className='service__list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum labore enim nobis necessitatibus</p>
-                        </li>
-                        <li><BsCheckLg className='service__list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum labore enim nobis necessitatibus</p>
-                        </li>
-                        <li><BsCheckLg className='service__list-icon' />
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum labore enim nobis necessitatibus</p>
-                        </li>
-                        <li><BsCheckLg className='service__list-icon' />
+                        <li><BiCheck className='service__list-icon' />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum labore enim nobis necessitatibus</p>
                         </li>
                     </ul>
@@ -57,19 +35,41 @@ const Services = () => {
                         <h3>UI/UX</h3>
                     </div>
                     <ul className='service__list'>
-                        <li><BsCheckLg className='service__list-icon' />
+                        <li><BiCheck className='service__list-icon' />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum labore enim nobis necessitatibus</p>
                         </li>
-                        <li><BsCheckLg className='service__list-icon' />
+                        <li><BiCheck className='service__list-icon' />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum labore enim nobis necessitatibus</p>
                         </li>
-                        <li><BsCheckLg className='service__list-icon' />
+                        <li><BiCheck className='service__list-icon' />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum labore enim nobis necessitatibus</p>
                         </li>
-                        <li><BsCheckLg className='service__list-icon' />
+                        <li><BiCheck className='service__list-icon' />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum labore enim nobis necessitatibus</p>
                         </li>
-                        <li><BsCheckLg className='service__list-icon' />
+                        <li><BiCheck className='service__list-icon' />
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum labore enim nobis necessitatibus</p>
+                        </li>
+                    </ul>
+                </div>
+                <div className="service">
+                    <div className="service__head">
+                        <h3>UI/UX</h3>
+                    </div>
+                    <ul className='service__list'>
+                        <li><BiCheck className='service__list-icon' />
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum labore enim nobis necessitatibus</p>
+                        </li>
+                        <li><BiCheck className='service__list-icon' />
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum labore enim nobis necessitatibus</p>
+                        </li>
+                        <li><BiCheck className='service__list-icon' />
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum labore enim nobis necessitatibus</p>
+                        </li>
+                        <li><BiCheck className='service__list-icon' />
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum labore enim nobis necessitatibus</p>
+                        </li>
+                        <li><BiCheck className='service__list-icon' />
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum labore enim nobis necessitatibus</p>
                         </li>
                     </ul>

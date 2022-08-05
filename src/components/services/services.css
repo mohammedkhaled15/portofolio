@@ -37,6 +37,7 @@
 .service__list-icon {
   color: var(--color-primary);
   margin-top: 2px;
+  font-size: 6rem;
 }
 .service__list p {
   font-size: 0.9rem;

@@ -9,7 +9,7 @@
   border: 1px solid transparent;
   border-radius: 1.7rem;
   text-align: center;
-  padding: 2rem;
+  padding: 1.6rem;
   transition: var(--transition);
   width: 48%;
   margin: 1rem 0;
@@ -28,7 +28,7 @@
   justify-content: space-evenly;
 }
 .skills-rates .progress {
-  width: 95%;
+  width: 97%;
   background-color: #eeeeee;
   height: 1.5rem;
   margin: 2rem 0;
