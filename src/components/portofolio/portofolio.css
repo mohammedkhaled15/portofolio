@@ -22,9 +22,11 @@
   grid-template-columns: repeat(auto-fit, minmax(240px, 260px));
   row-gap: 2rem;
   column-gap: 2rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
-
+.projects .repo-card {
+  text-align: center;
+}
 .projects .repo-card img {
   height: 250px !important;
   object-fit: unset;
