@@ -1,6 +1,25 @@
+.portofolio__container {
+  margin-top: 3.5rem;
+}
+.portofolio__container .filter-container {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.portofolio__container .filter-container button {
+  box-shadow: 3.1px 6.2px 6.2px hsl(0deg 0% 0% / 0.4);
+  transition: var(--transition);
+}
+.portofolio__container .filter-container button.active {
+  background-color: var(--color-white);
+  box-shadow: 0.6px 1.3px 1.3px hsl(0deg 0% 0% / 0.48);
+  border-color: transparent;
+}
+
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 260px));
   row-gap: 2rem;
   column-gap: 2rem;
   margin-top: 1rem;
@@ -9,5 +28,8 @@
 .projects .repo-card img {
   height: 250px !important;
   object-fit: unset;
-  /* border-radius: 1rem; */
+  border-radius: 1rem;
+}
+.projects .repo-card h4 {
+  text-transform: capitalize;
 }
