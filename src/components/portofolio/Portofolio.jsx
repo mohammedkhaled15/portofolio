@@ -29,7 +29,7 @@ const Portofolio = () => {
             <h5>My Recent Work</h5>
             <h2>Portofolio</h2>
             <div className="container portofolio__container">
-                <Filters filteredRepos={filteredRepos} setChoosedRepos={setChoosedRepos} filterCriteria={filterCriteria} setFilterCriteria={setFilterCriteria} />
+                {filteredRepos === null ? "" : <Filters filteredRepos={filteredRepos} setChoosedRepos={setChoosedRepos} filterCriteria={filterCriteria} setFilterCriteria={setFilterCriteria} choosedRepos={choosedRepos} />}
                 <AnimatePresence>
                     <motion.div layout className="projects">
                         {
@@ -38,8 +38,14 @@ const Portofolio = () => {
                                     return (
                                         <motion.div layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.8 }}
                                             className="repo-card" key={repo.id}>
-                                            <h4 >{deleteAddedWords(repo.name).replaceAll("-", " ")}</h4>
                                             <img src={`https://raw.githubusercontent.com/mohammedkhaled15/${repo.name}/master/image.png`} alt="repo main img" />
+                                            <div className="overlay">
+                                                <div className="overlay__cta">
+                                                    <a href={`https://mohammedkhaled15.github.io/${repo.name}/`} className="btn btn-primary" target="_blan;">Live Demo</a>
+                                                    <a href={repo.html_url} className="btn" target="_blan;">Repo</a>
+                                                </div>
+                                                <h4 >{deleteAddedWords(repo.name).replaceAll("-", " ")}</h4>
+                                            </div>
                                         </motion.div>
                                     )
                                 })
@@ -48,7 +54,7 @@ const Portofolio = () => {
                     </motion.div>
                 </AnimatePresence>
             </div>
-        </section>
+        </section >
     )
 }
 

@@ -16,6 +16,13 @@ import { RiReactjsLine } from "react-icons/ri"
 import { SiRedux } from "react-icons/si"
 import { SiReactrouter } from "react-icons/si"
 
+import { Pagination, Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 const Experience = () => {
     const [fire, setFire] = useState(false);
 
@@ -27,12 +34,29 @@ const Experience = () => {
         return () => window.removeEventListener("scroll", scrollHeight);
     });
 
+    const pagination = {
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+    };
+
     return (
         <section id='experience'>
             <h5>Skills I have</h5>
             <h2>My Experience</h2>
-            <div className="container experience__container">
-                <div className="skills">
+            <Swiper
+                // install Swiper modules
+                modules={[Autoplay, Pagination]}
+                spaceBetween={50}
+                pagination={pagination}
+                slidesPerView={1}
+                autoplay={{
+                    delay: 10000,
+                    disableOnInteraction: false,
+                }}
+                className="container experience__container">
+                <SwiperSlide className="skills">
                     <h2>Core Skills</h2>
                     <div className="skills-rates">
                         <div className="progress">
@@ -60,8 +84,8 @@ const Experience = () => {
                             {<CountUp end={80} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
                         </div>
                     </div>
-                </div>
-                <div className="skills">
+                </SwiperSlide>
+                <SwiperSlide className="skills">
                     <h2>Libraries</h2>
                     <div className="skills-rates">
                         <div className="progress">
@@ -89,8 +113,8 @@ const Experience = () => {
                             {<CountUp end={60} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
                         </div>
                     </div>
-                </div>
-                <div className="skills">
+                </SwiperSlide>
+                <SwiperSlide className="skills">
                     <h2>React Libraries</h2>
                     <div className="skills-rates">
                         <div className="progress">
@@ -112,8 +136,8 @@ const Experience = () => {
                             {<CountUp end={80} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
                         </div>
                     </div>
-                </div>
-                <div className="skills">
+                </SwiperSlide>
+                <SwiperSlide className="skills">
                     <h2>Side Skills</h2>
                     <div className="skills-rates">
                         <div className="progress">
@@ -129,8 +153,8 @@ const Experience = () => {
                             {<CountUp end={85} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
                         </div>
                     </div>
-                </div>
-            </div>
+                </SwiperSlide>
+            </Swiper>
         </section>
     )
 }
