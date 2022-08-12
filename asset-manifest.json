@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/portofolio/static/css/main.665c0527.css",
+    "main.js": "/portofolio/static/js/main.d3246a79.js",
+    "static/media/me.png": "/portofolio/static/media/me.821ecddcb9953b46bf75.png",
+    "static/media/me-about.jpg": "/portofolio/static/media/me-about.fb4452e7f286d3636ef9.jpg",
+    "static/media/Mohammed-Khaled-CV.pdf": "/portofolio/static/media/Mohammed-Khaled-CV.1befb89d96e45c4bd8d3.pdf",
+    "index.html": "/portofolio/index.html",
+    "main.665c0527.css.map": "/portofolio/static/css/main.665c0527.css.map",
+    "main.d3246a79.js.map": "/portofolio/static/js/main.d3246a79.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.665c0527.css",
+    "static/js/main.d3246a79.js"
+  ]
+}
