@@ -52,7 +52,7 @@ const Experience = () => {
                 pagination={pagination}
                 slidesPerView={1}
                 autoplay={{
-                    delay: 10000,
+                    delay: 3000,
                     disableOnInteraction: false,
                 }}
                 className="container experience__container">

@@ -19,7 +19,7 @@ const App = () => {
             <Experience />
             <Services />
             <Portofolio />
-            <Testemonials />
+            {/* <Testemonials /> */}
             <Contact />
             <Footer />
         </>
