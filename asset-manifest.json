@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/portofolio/static/css/main.4dfb9c38.css",
-    "main.js": "/portofolio/static/js/main.964f2c9a.js",
+    "main.js": "/portofolio/static/js/main.c1d2e055.js",
     "static/media/me.png": "/portofolio/static/media/me.821ecddcb9953b46bf75.png",
     "static/media/me-about.jpg": "/portofolio/static/media/me-about.fb4452e7f286d3636ef9.jpg",
     "static/media/Mohammed-Khaled-CV.pdf": "/portofolio/static/media/Mohammed-Khaled-CV.044893d06b8efbedd1af.pdf",
     "index.html": "/portofolio/index.html",
     "main.4dfb9c38.css.map": "/portofolio/static/css/main.4dfb9c38.css.map",
-    "main.964f2c9a.js.map": "/portofolio/static/js/main.964f2c9a.js.map"
+    "main.c1d2e055.js.map": "/portofolio/static/js/main.c1d2e055.js.map"
   },
   "entrypoints": [
     "static/css/main.4dfb9c38.css",
-    "static/js/main.964f2c9a.js"
+    "static/js/main.c1d2e055.js"
   ]
 }
