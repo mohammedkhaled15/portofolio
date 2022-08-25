@@ -52,7 +52,7 @@ const Experience = () => {
                 pagination={pagination}
                 slidesPerView={1}
                 autoplay={{
-                    delay: 3000,
+                    delay: 5000,
                     disableOnInteraction: false,
                 }}
                 className="container experience__container">
@@ -61,25 +61,33 @@ const Experience = () => {
                     <div className="skills-rates">
                         <div className="progress">
                             <label>HTML5</label>
-                            <AiOutlineHtml5 className='progress__icon' color='red' />
+                            <div className='progress__icon__wrapper'>
+                                <AiOutlineHtml5 className='progress__icon' color='red' />
+                            </div>
                             <span style={{ width: `${fire ? "90%" : "0"}` }}></span>
                             {<CountUp end={90} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
                         </div>
                         <div className="progress">
                             <label>CSS3</label>
-                            <SiCss3 className='progress__icon' color='#264de4' />
+                            <div className='progress__icon__wrapper'>
+                                <SiCss3 className='progress__icon' color='#264de4' />
+                            </div>
                             <span style={{ width: `${fire ? "85%" : "0"}` }}></span>
                             {<CountUp end={85} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
                         </div>
                         <div className="progress">
                             <label>javaScript</label>
-                            <SiJavascript className='progress__icon' color='#f0db4f' />
+                            <div className='progress__icon__wrapper'>
+                                <SiJavascript className='progress__icon' color='#f0db4f' />
+                            </div>
                             <span style={{ width: `${fire ? "80%" : "0"}` }}></span>
                             {<CountUp end={80} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
                         </div>
                         <div className="progress">
                             <label>ReactJs</label>
-                            <GrReactjs className='progress__icon-react' color='#5CD0EE' />
+                            <div className='progress__icon__wrapper'>
+                                <GrReactjs className='progress__icon-react' color='#5CD0EE' />
+                            </div>
                             <span style={{ width: `${fire ? "80%" : "0"}` }}></span>
                             {<CountUp end={80} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
                         </div>
@@ -90,25 +98,33 @@ const Experience = () => {
                     <div className="skills-rates">
                         <div className="progress">
                             <label>Sass</label>
-                            <FaSass className='progress__icon' color='#C66394' />
+                            <div className='progress__icon__wrapper'>
+                                <FaSass className='progress__icon' color='#C66394' />
+                            </div>
                             <span style={{ width: `${fire ? "85%" : "0"}` }}></span>
                             {<CountUp end={85} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
                         </div>
                         <div className="progress">
                             <label>Bootstrap</label>
-                            <FaBootstrap className='progress__icon' color='#7211EC' />
+                            <div className='progress__icon__wrapper'>
+                                <FaBootstrap className='progress__icon' color='#7211EC' />
+                            </div>
                             <span style={{ width: `${fire ? "75%" : "0"}` }}></span>
                             {<CountUp end={75} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
                         </div>
                         <div className="progress">
                             <label>Tailwind</label>
-                            <SiTailwindcss className='progress__icon ' color='#14B6AE' />
+                            <div className='progress__icon__wrapper'>
+                                <SiTailwindcss className='progress__icon ' color='#14B6AE' />
+                            </div>
                             <span style={{ width: `${fire ? "65%" : "0"}` }}></span>
                             {<CountUp end={65} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
                         </div>
                         <div className="progress">
                             <label>Material UI</label>
-                            <SiMaterialui className='progress__icon ' color='#0079F2' />
+                            <div className='progress__icon__wrapper'>
+                                <SiMaterialui className='progress__icon ' color='#0079F2' />
+                            </div>
                             <span style={{ width: `${fire ? "60%" : "0"}` }}></span>
                             {<CountUp end={60} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
                         </div>
@@ -119,19 +135,33 @@ const Experience = () => {
                     <div className="skills-rates">
                         <div className="progress">
                             <label>React Hooks</label>
-                            <RiReactjsLine className='progress__icon-react' color='#5CD0EE' />
+                            <div className='progress__icon__wrapper'>
+                                <RiReactjsLine className='progress__icon-react' color='#5CD0EE' />
+                            </div>
                             <span style={{ width: `${fire ? "85%" : "0"}` }}></span>
                             {<CountUp end={85} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
                         </div>
                         <div className="progress">
                             <label>Redux</label>
-                            <SiRedux className='progress__icon-react' color='#7046B2' />
+                            <div className='progress__icon__wrapper'>
+                                <SiRedux className='progress__icon-react' color='#7046B2' />
+                            </div>
                             <span style={{ width: `${fire ? "70%" : "0"}` }}></span>
                             {<CountUp end={70} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
                         </div>
                         <div className="progress">
+                            <label>Redux-toolkit</label>
+                            <div className='progress__icon__wrapper'>
+                                <SiRedux className='progress__icon-react' color='#7046B2' />
+                            </div>
+                            <span style={{ width: `${fire ? "75%" : "0"}` }}></span>
+                            {<CountUp end={75} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
+                        </div>
+                        <div className="progress">
                             <label>Router</label>
-                            <SiReactrouter className='progress__icon' color='#C5021A' />
+                            <div className='progress__icon__wrapper'>
+                                <SiReactrouter className='progress__icon' color='#C5021A' />
+                            </div>
                             <span style={{ width: `${fire ? "80%" : "0"}` }}></span>
                             {<CountUp end={80} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
                         </div>
@@ -142,13 +172,17 @@ const Experience = () => {
                     <div className="skills-rates">
                         <div className="progress">
                             <label>Problem Solving  </label>
-                            <BsDiagram3Fill className='progress__icon' color='black' />
+                            <div className='progress__icon__wrapper'>
+                                <BsDiagram3Fill className='progress__icon' color='black' />
+                            </div>
                             <span style={{ width: `${fire ? "45%" : "0"}` }}></span>
                             {<CountUp end={45} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
                         </div>
                         <div className="progress">
                             <label>Git</label>
-                            <FaGitAlt className='progress__icon' color='#E94E31' />
+                            <div className='progress__icon__wrapper'>
+                                <FaGitAlt className='progress__icon' color='#E94E31' />
+                            </div>
                             <span style={{ width: `${fire ? "85%" : "0"}` }}></span>
                             {<CountUp end={85} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
                         </div>

@@ -5,8 +5,6 @@
   gap: 4%;
 }
 .skills {
-  /* background: var(--color-bg-variant); */
-  /* border: 1px solid transparent; */
   border-radius: 1.7rem;
   text-align: center;
   padding: 1.6rem;
@@ -15,8 +13,6 @@
   margin: 1rem 0;
 }
 .skills:hover {
-  /* background: transparent; */
-  /* border-color: var(--color-primary-variant); */
   cursor: default;
 }
 .skills-rates {
@@ -28,7 +24,7 @@
   justify-content: space-evenly;
 }
 .skills-rates .progress {
-  width: 97%;
+  width: 100%;
   background-color: #eeeeee;
   height: 1.5rem;
   margin: 2rem 0;
@@ -61,20 +57,18 @@
   color: var(--color-white);
   font-weight: bold;
 }
-.progress__icon {
+.progress__icon__wrapper {
   position: absolute;
   left: 50%;
   top: -3.5rem;
-  font-size: 3rem;
   transform: translateX(-50%);
+}
+.progress__icon {
+  font-size: 3rem;
   animation: rotateAnimation 2s linear infinite;
 }
 .progress__icon-react {
-  position: absolute;
-  left: 50%;
-  top: -3.5rem;
   font-size: 3rem;
-  transform: translateX(-50%);
   animation: spin2d 5000ms infinite linear;
 }
 
@@ -108,9 +102,9 @@
 }
 /*========= MEDIA QUERIES (MEDIUM) =========*/
 @media screen and (max-width: 1024px) {
-  .skills {
+  /* .skills {
     width: 100%;
-  }
+  } */
 }
 /*========= MEDIA QUERIES (SMALL) =========*/
 @media screen and (max-width: 600px) {

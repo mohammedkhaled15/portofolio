@@ -42,7 +42,7 @@ const Contact = () => {
                         <ImWhatsapp className='contact__option-icon' />
                         <h4>Whatsapp</h4>
                         <h5>0201069667123</h5>
-                        <a href="https://api.whatsapp.com/send?phone=0201069667123" rel="noreferrer" target="_blank">Send a Message</a>
+                        <a href="https://api.whatsapp.com/send?phone=201069667123" rel="noreferrer" target="_blank">Send a Message</a>
                     </article>
                 </div>
                 <form ref={form} onSubmit={sendEmail}>
