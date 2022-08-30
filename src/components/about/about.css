@@ -24,6 +24,7 @@
   overflow: hidden;
   transform: rotate(10deg);
   /* transform-origin: center; */
+  height: 100%;
   transition: var(--transition);
 }
 .about__me-image:hover {
