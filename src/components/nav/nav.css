@@ -2,7 +2,7 @@ nav {
   background: rgba(0, 0, 0, 0.3);
   width: max-content;
   display: block;
-  padding: 0.7rem 1.7rem;
+  padding: 0.7rem 1.4rem;
   z-index: 2;
   position: fixed;
   left: 50%;
@@ -15,7 +15,7 @@ nav {
 }
 nav a {
   background: transparent;
-  padding: 0.9rem;
+  padding: 0.6rem;
   border-radius: 50%;
   display: flex;
   color: var(--color-light);
