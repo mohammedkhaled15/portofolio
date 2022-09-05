@@ -43,6 +43,7 @@
   text-align: center;
   padding: 2rem;
   transition: var(--transition);
+  width: max-content;
 }
 .about__card:hover {
   background: transparent;
@@ -82,6 +83,7 @@
 /*========= MEDIA QUERIES (SMALL) =========*/
 @media screen and (max-width: 600px) {
   .about__me {
+    display: none;
     width: 65%;
     margin: 0 auto 3rem;
   }
