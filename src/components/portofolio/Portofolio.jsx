@@ -10,7 +10,7 @@ const Portofolio = () => {
     const [choosedRepos, setChoosedRepos] = useState([])
 
     const deleteAddedWords = str => {
-        const words = ["PS22-", "-html", "-css", "-scss", "-js", "-react", "-tailwind", "-bootstrap", "-oop", "reduxtk"]
+        const words = ["PS22-", "-html", "-css", "-scss", "-js", "-react", "-tailwind", "-bootstrap", "-oop", "-reduxtk"]
         for (let i in words) {
             str = str.replace(words[i], "").trim()
         }
