@@ -3,6 +3,9 @@ import axios from 'axios'
 import "./portofolio.css"
 import Filters from './Filters'
 import { motion, AnimatePresence } from 'framer-motion'
+import { projects } from './projects'
+
+
 
 const Portofolio = () => {
     const [filteredRepos, setFilteredRepos] = useState(null)
@@ -18,11 +21,13 @@ const Portofolio = () => {
     }
 
     useEffect(() => {
-        axios.get("https://api.github.com/users/mohammedkhaled15/repos").then(response => {
-            const repos = response.data.filter(repo => repo.fork === false && repo.name.startsWith("PS22"))
-            setFilteredRepos(repos)
-            setChoosedRepos(repos)
-        })
+        // axios.get("https://api.github.com/users/mohammedkhaled15/repos").then(response => {
+        //     const repos = response.data.filter(repo => repo.fork === false && repo.name.startsWith("PS22"))
+        //     setFilteredRepos(repos)
+        //     setChoosedRepos(repos)
+        // })
+        setFilteredRepos(projects)
+        setChoosedRepos(projects)
     }, [])
     return (
         <section id='portofolio'>
@@ -38,11 +43,11 @@ const Portofolio = () => {
                                     return (
                                         <motion.div layout animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.8 }}
                                             className="repo-card" key={repo.id}>
-                                            <img src={`https://raw.githubusercontent.com/mohammedkhaled15/${repo.name}/master/image.png`} alt="repo main img" />
+                                            <img src={repo.imgUrl} alt="repo main img" />
                                             <div className="overlay">
                                                 <div className="overlay__cta">
-                                                    <a href={`https://mohammedkhaled15.github.io/${repo.name}/`} className="btn btn-primary" target="_blan;">Live Demo</a>
-                                                    <a href={repo.html_url} className="btn" target="_blan;">Repo</a>
+                                                    <a href={repo.demoLink} className="btn btn-primary" target="_blan;">Live Demo</a>
+                                                    <a href={repo.repoLink} className="btn" target="_blan;">Repo</a>
                                                 </div>
                                                 <h4 >{deleteAddedWords(repo.name).replaceAll("-", " ")}</h4>
                                             </div>
