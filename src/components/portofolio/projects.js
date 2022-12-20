@@ -172,12 +172,12 @@ export const projects = [
   },
   {
     id: 19,
-    name: "todo-list-draggable-tasks-react-typescript-reduxtk    ",
+    name: "Draggable-todo-tasks-react-typescript-reduxtk    ",
     demoLink:
-      "https://mohammedkhaled15.github.io/todo-list-draggable-tasks-react-typescript-reduxtk   ",
+      "https://mohammedkhaled15.github.io/draggavle-todo-list-react-ts/  ",
     repoLink:
-      "https://github.com/mohammedkhaled15/todo-list-draggable-tasks-react-typescript-reduxtk    ",
+      "https://github.com/mohammedkhaled15/draggavle-todo-list-react-ts    ",
     imgUrl:
-      "https://raw.githubusercontent.com/mohammedkhaled15/todo-list-draggable-tasks-react-typescript-reduxtk /master/image.png",
+      "https://raw.githubusercontent.com/mohammedkhaled15/draggavle-todo-list-react-ts /master/image.png",
   },
 ];
