@@ -20,6 +20,7 @@ const Filters = ({ filteredRepos, setChoosedRepos, filterCriteria, setFilterCrit
             <button className={`btn btn-primary ${filterCriteria === "Tailwind".toLocaleLowerCase() ? "active" : ""}`} onClick={(e) => setFilterCriteria("Tailwind".toLowerCase())}>Tailwind{` (${filteredRepos.filter(repo => repo.name.includes("tailwind")).length})`}</button>
             <button className={`btn btn-primary ${filterCriteria === "Scss".toLocaleLowerCase() ? "active" : ""}`} onClick={(e) => setFilterCriteria("Scss".toLowerCase())}>Sass{` (${filteredRepos.filter(repo => repo.name.includes("scss")).length})`}</button>
             <button className={`btn btn-primary ${filterCriteria === "Reduxtk".toLocaleLowerCase() ? "active" : ""}`} onClick={(e) => setFilterCriteria("Reduxtk".toLowerCase())}>Redux-tk{` (${filteredRepos.filter(repo => repo.name.includes("reduxtk")).length})`}</button>
+            <button className={`btn btn-primary ${filterCriteria === "typescript".toLocaleLowerCase() ? "active" : ""}`} onClick={(e) => setFilterCriteria("typescript".toLowerCase())}>typeScript{` (${filteredRepos.filter(repo => repo.name.includes("typescript")).length})`}</button>
         </div>
     )
 }

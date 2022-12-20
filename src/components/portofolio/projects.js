@@ -170,4 +170,14 @@ export const projects = [
     imgUrl:
       "https://raw.githubusercontent.com/mohammedkhaled15/PS22-adding-and-delete-tasks-js-css /master/image.png",
   },
+  {
+    id: 19,
+    name: "todo-list-draggable-tasks-react-typescript-reduxtk    ",
+    demoLink:
+      "https://mohammedkhaled15.github.io/todo-list-draggable-tasks-react-typescript-reduxtk   ",
+    repoLink:
+      "https://github.com/mohammedkhaled15/todo-list-draggable-tasks-react-typescript-reduxtk    ",
+    imgUrl:
+      "https://raw.githubusercontent.com/mohammedkhaled15/todo-list-draggable-tasks-react-typescript-reduxtk /master/image.png",
+  },
 ];
