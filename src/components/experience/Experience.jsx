@@ -3,7 +3,7 @@ import "./experience.css"
 import { useState, useEffect } from 'react'
 import CountUp from 'react-countup'
 import { AiOutlineHtml5 } from "react-icons/ai"
-import { SiCss3 } from "react-icons/si"
+import { SiCss3, SiTypescript } from "react-icons/si"
 import { SiJavascript } from "react-icons/si"
 import { GrReactjs } from "react-icons/gr"
 import { FaSass } from "react-icons/fa"
@@ -84,6 +84,14 @@ const Experience = () => {
                             {<CountUp end={80} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
                         </div>
                         <div className="progress">
+                            <label>TypeScript</label>
+                            <div className='progress__icon__wrapper'>
+                                <SiTypescript className='progress__icon' color='#377ab1' />
+                            </div>
+                            <span style={{ width: `${fire ? "70%" : "0"}` }}></span>
+                            {<CountUp end={70} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
+                        </div>
+                        <div className="progress">
                             <label>ReactJs</label>
                             <div className='progress__icon__wrapper'>
                                 <GrReactjs className='progress__icon-react' color='#5CD0EE' />
@@ -109,16 +117,16 @@ const Experience = () => {
                             <div className='progress__icon__wrapper'>
                                 <FaBootstrap className='progress__icon' color='#7211EC' />
                             </div>
-                            <span style={{ width: `${fire ? "75%" : "0"}` }}></span>
-                            {<CountUp end={75} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
+                            <span style={{ width: `${fire ? "90%" : "0"}` }}></span>
+                            {<CountUp end={90} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
                         </div>
                         <div className="progress">
                             <label>Tailwind</label>
                             <div className='progress__icon__wrapper'>
                                 <SiTailwindcss className='progress__icon ' color='#14B6AE' />
                             </div>
-                            <span style={{ width: `${fire ? "65%" : "0"}` }}></span>
-                            {<CountUp end={65} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
+                            <span style={{ width: `${fire ? "85%" : "0"}` }}></span>
+                            {<CountUp end={85} enableScrollSpy={fire} duration={1.5} suffix="%" scrollSpyOnce={true} className="counter" />}
                         </div>
                         <div className="progress">
                             <label>Material UI</label>
